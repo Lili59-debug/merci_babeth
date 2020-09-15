@@ -1,0 +1,177 @@
+body {
+  font-family: arial, helvetica, sans-serif;
+  background-image: url("../img/fraises.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header, main, footer {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+h1 {
+  text-align: center;
+  color: #555;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.1em;
+}
+
+.bouton_accueil {
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  background-color: #d69262;
+  color: white;
+  padding: 0.4em 2em;
+  border-radius: 2em;
+  box-sizing: border-box;
+  margin: 5px auto;
+}
+
+.bouton_accueil:hover {
+  cursor: pointer;
+  box-shadow: 1px 2px 1px 1px rgba(214, 146, 98, 0.2);
+  text-decoration: none;
+  color:white;
+}
+
+form {
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #555;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 0.7em;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer a:hover {
+  color: white;
+  text-transform: uppercase;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+#oubli {
+  display: block;
+  text-align: center;
+  font-size: 0.6em;
+  margin-top: 5px;
+
+}
+.btn-primary {
+  border:none;
+  background-color: #d69262;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  border:none;
+  background-color: #d69262;
+  cursor: pointer;
+  box-shadow: 1px 2px 1px 1px rgba(214, 146, 98, 0.2)
+}
+
+input {
+    width: 30%;
+  }
+
+span {
+  color: red;
+}
+
+.navbar-nav > li > .dropdown-menu {
+  background-color: snow;
+  border: none;
+ }
+
+.btn-outline-success {
+  border-color: #555;
+  color: #555;
+}
+
+.btn-outline-success:hover {
+  background-color: #d69262;
+  border: none;
+
+}
+
+ /*code animation*/
+
+.infobulle {
+  width:110px;
+  height:110px;
+  overflow:hidden;
+  position:relative;
+  display: block;
+}
+
+.infobulle p {
+  position:absolute;
+  left:0;
+  right:0;
+  margin:0;
+  padding:0 10px;
+  line-height:15px;
+  background-color:rgba(0, 0, 0, 0.3);
+  color:white;
+  transition:margin-top 1s ease-in-out;
+}
+.infobulle:hover p {
+  margin-top:-70px;
+}
+
+/*page rayons*/
+.produit {
+  margin: 5px;
+  background-color: white;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.catalogue {
+  display: flex;
+  justify-content: center;
+}
+
+.nom_categorie {
+  text-transform: uppercase;
+}
+
+.ajout_panier {
+  color: #555;
+}
+
+.ajout_panier:hover {
+  color: #555;
+}
+
+/*page tous produits*/
+
+.image_tous {
+  max-width: 100px;
+  max-height: auto;
+  margin: 5px 5px 10px 5px;
+}
+.image_rayons {
+  max-width: 100px;
+  max-height: auto;
+  margin: 5px 5px 10px 5px;
+}

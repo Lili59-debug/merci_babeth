@@ -1,0 +1,20 @@
+<%- include('header') -%>
+<main class="container">
+  <h3 class="text-center nom_categorie">
+    <%= rayon[0].categorie.split("_")[0] %> <%= rayon[0].categorie.split("_")[1] %> <%= rayon[0].categorie.split("_")[2] %> <%= rayon[0].categorie.split("_")[3] %></h3>
+  <div class="catalogue">
+    <% for (let i = 0; i<rayon.length; i++){%>
+    <div class="produit">
+      <h4 class="text-center"><%= rayon[i].nom_produit %></h4>
+      <img class="image_rayons" src="<%= rayon[i].image %>">
+      <p><%= rayon[i].description %></p>
+      <p><strong><%= rayon[i].prix %> € / <%= rayon[i].unite %></strong></p>
+      <p>Producteur : <%= rayon[i].nom_producteur %></p>
+      <a class="ajout_panier" href="#"><i class="fas fa-shopping-basket"></i> Ajouter au panier</a>
+    </div>
+    <%}%>
+
+  </div>
+
+</main>
+<%- include('footer') -%>

@@ -1,0 +1,84 @@
+<%- include('header') -%>
+<main class="container pb-3">
+  <div class="text-center">
+    <a class="bouton_accueil" href="/qui-est-babeth">Qui sommes-nous ?  </a>
+  </div>
+  <section class="mt-3 mb-3 align-items-center text-center">
+
+    <h1>Nos produits</h1>
+
+    <div class="row align-items-center justify-content-center align-content-around">
+
+      <article class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <a class="infobulle" href="/rayons/epicerie_salee">
+          <img src="img/vignette-epices.jpg" alt="Epices" title="Photo by monicore from Pexels">
+          <p>Épicerie salée</p></a>
+      </article>
+
+      <article class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <a class="infobulle" href="/rayons/viande"><img src="img/vignette-viande.jpg" alt="viande" title="Photo by Angele J from Pexels">
+            <p>Viande, poissons, &oelig;ufs</p></a>
+      </article>
+
+      <article class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <a class="infobulle" href="/rayons/fruits_et_legumes"><img src="img/vignette-choufleur.jpg" alt="Chou-fleur" title="Image par Jordan Holiday de Pixabay">
+        <p>Fruits et légumes</p></a>
+      </article>
+
+      <article class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <a class="infobulle" href="/rayons/cosmetiques"><img src="img/vignette-hygiene.jpg" alt="Dentifrice solide" title="Photo by Karolina Grabowska from Pexels">
+          <p>Cosmétiques</p></a>
+      </article>
+
+      <article class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <a class="infobulle" href="/rayons/entretien_de_la_maison"><img src="img/vignette-maison.jpg" alt="Produit d'entretien" title="Photo by Karolina Grabowska from Pexels">
+        <p>Entretien de la maison</p></a>
+      </article>
+
+      <article class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <a class="infobulle" href="/rayons/boissons"><img src="img/vignette-vin.jpg" alt="Boisson" title="Photo by Ylanite Koppens from Pexels">
+        <p>Boissons</p></a>
+      </article>
+
+      <article class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <a class="infobulle" href="/rayons/boulangerie"><img src="img/vignette-pain.jpg" alt="Pain" title="Photo from Pexels">
+        <p>Boulangerie - pâtisserie</p></a>
+      </article>
+
+      <article class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <a class="infobulle" href="/rayons/produits_laitiers"><img src="img/vignette-yaourt.jpg" alt="Pot de yaourt" title="Photo by Burst from Pexels">
+        <p>Produits laitiers et glaces</p></a>
+      </article>
+
+      <article class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <a class="infobulle" href="/rayons/epicerie_sucree"><img src="img/vignette-chocolat.jpg" alt="chocolat" title="Photo from Pexels">
+        <p>Épicerie sucrée, thé, confiseries, chocolat</p></a>
+      </article>
+
+      <article class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <a class="infobulle" href="/rayons/fleurs"><img src="img/vignette-fleurs.jpg" alt="fleurs" title="Photo by Secret Garden from Pexels">
+        <p>Fleurs et plants</p></a>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="text-center">
+    <a class="bouton_accueil" href="/adherer">Adhérer à l'association</a>
+  </div>
+
+    <form class="mt-3" action="/login" method="post">
+      <h1>Déja adhérent ?</h1>
+      <p class="small text-center">Les champs marqués d'un <span>*</span> sont obligatoires.</p>
+      <div class="form-group">
+        <input class="form-control text-center" type="text" name="nom" value="" placeholder="Login *" required>
+      </div>
+      <div class="form-group">
+        <input class="form-control text-center" type="password" name="motdepasse" value="" placeholder="Mot de passe *" required>
+      </div>
+      <a id="oubli" href="/oubli-motdepasse">Mot de passe oublié ?</a>
+      <button class="btn btn-primary mt-2" type="submit" name="Se connecter ">Me connecter <i class="fas fa-sign-in-alt"></i></button>
+    </form>
+
+</main>
+<%- include('footer') -%>

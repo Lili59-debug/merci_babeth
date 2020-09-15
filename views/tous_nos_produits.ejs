@@ -1,0 +1,22 @@
+<%- include('header') -%>
+<main class="container">
+  <h3 class="text-center">Tous nos produits</h3>
+  <div class="catalogue row">
+
+    <% for (let i = 0; i<selection.length; i++){%>
+    <div class="produit">
+      <h4 class="text-center"><%= selection[i].nom_produit %></h4>
+      <img class="image_tous" src="<%= selection[i].image %>">
+      <p><%= selection[i].description %></p>
+      <p><strong><%= selection[i].prix %> € / <%= selection[i].unite %></strong></p>
+      <p>Producteur : <%= selection[i].nom_producteur %></p>
+      <p>Catégorie : <%= selection[i].categorie %></p>
+      <a class="ajout_panier" href="#"><i class="fas fa-shopping-basket"></i> Ajouter au panier</a>
+
+    </div>
+    <%}%>
+
+  </div>
+
+</main>
+<%- include('footer') -%>
