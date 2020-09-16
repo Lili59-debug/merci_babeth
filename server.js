@@ -65,6 +65,15 @@ app.get('/admin',function(req,res){
     res.render('admin');
 })
 
+//affichage page liste
+app.get('/liste',function(req,res){
+  let mysort = {categorie:-1};
+  Produit.find({},function(err,catalogue){
+    console.log(catalogue);
+    res.render('liste',{catalogue:catalogue});
+  }).sort(mysort)
+})
+
 //afficher autres pages
 app.get('/qui-est-babeth',function(req,res){
     res.render('qui-est-babeth');

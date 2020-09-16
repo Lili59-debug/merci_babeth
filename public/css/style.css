@@ -100,6 +100,14 @@ span {
   border: none;
  }
 
+.nav-item {
+list-style: none;
+ }
+
+.fa-cogs {
+  color: #555;
+}
+
 .btn-outline-success {
   border-color: #555;
   color: #555;
@@ -176,6 +184,8 @@ span {
   margin: 5px 5px 10px 5px;
 }
 
+/*page admin*/
+
 input,select,textarea,small {
   margin-bottom: 10px;
 }
@@ -185,4 +195,9 @@ input,select,textarea,small {
 }
 .form-check {
   margin-bottom: 10px;
+}
+#lien_catalogue {
+  color: #555;
+  text-decoration: underline;
+
 }

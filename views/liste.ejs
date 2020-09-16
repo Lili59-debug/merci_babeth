@@ -1,0 +1,38 @@
+<%- include('header') -%>
+<main class="container">
+<h1>Catalogue des produits</h1>
+
+<p><a href="/admin">Ajouter un produit</a></p>
+<table class="table">
+  <tr>
+    <thead>
+      <th>Nom</th>
+      <th>Description</th>
+      <th>Prix</th>
+      <th>Catégorie</th>
+      <th>Publié</th>
+      <th>En vedette</th>
+    </thead>
+  </tr>
+  <tr>
+    <tbody>
+
+<%for (let i=0; i<catalogue.length; i++){%>
+<tr>
+  <td><%=catalogue[i].nom_produit%></td>
+  <td><%=catalogue[i].description.substring(0, 30)%></td>
+  <td><%=catalogue[i].prix%></td>
+  <td><%=catalogue[i].categorie%></td>
+  <td><%=catalogue[i].publication%></td>
+  <td><%=catalogue[i].mis_en_avant%></td>
+</tr>
+<%}%>
+
+
+
+
+    </tbody>
+  </tr>
+</table>
+</main>
+<%- include('footer') -%>

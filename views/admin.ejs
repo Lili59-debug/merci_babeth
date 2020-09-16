@@ -1,8 +1,10 @@
 <%- include('header') -%>
 <main class="container pt-3 pb-3 align-items-center">
+  <h1><a href="/liste" id="lien_catalogue">Accéder au catalogue des produits</a></h1>
+  <br>
   <form action="/ajout" method="post">
-    <h1><a href="/liste">Accéder au catalogue des produits</a></h1>
-    <h1>Ajout de produits</h1>
+
+    <h1>Ajouter un produit</h1>
     <div class="form-group">
       <label for="ajout_nom">Nom du produit</label>
       <input class="form-control" type="text" name="ajout_nom">
