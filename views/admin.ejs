@@ -2,16 +2,17 @@
 <main class="container pt-3 pb-3 align-items-center">
   <h1><a href="/liste" id="lien_catalogue">Accéder au catalogue des produits</a></h1>
   <br>
-  <form action="/ajout" method="post">
+  <form action="/ajout" method="post" enctype="multipart/form-data">
 
     <h1>Ajouter un produit</h1>
+    <p class="small text-center">Les champs marqués d'un <span>*</span> sont obligatoires.</p>
     <div class="form-group">
-      <label for="ajout_nom">Nom du produit</label>
-      <input class="form-control" type="text" name="ajout_nom">
+      <label for="ajout_nom">Nom du produit *</label>
+      <input class="form-control" type="text" name="ajout_nom" required>
     </div>
-    <label for="ajout_producteur">Nom du producteur</label>
-    <select class="form-control custom-select" name="ajout_producteur">
-      <option selected="true" disabled="disabled">Sélectionnez votre nom dans la liste</option>
+    <label for="ajout_producteur">Nom du producteur *</label>
+    <select class="form-control custom-select" name="ajout_producteur" required>
+      <option selected="true" disabled="disabled" value="">-- Sélectionnez votre nom dans la liste --</option>
       <option>Farid Agri</option>
       <option>Sami Botté</option>
       <option>Jacqueline Conserve</option>
@@ -24,13 +25,11 @@
     </select>
     <label for="ajout_description">Description</label>
     <textarea class="form-control" name="ajout_description" rows="6" cols="80"></textarea>
-    <label>Prix</label>
-    <input class="form-control" type="number" name="ajout_prix" step="0.01">
-    <label for="ajout_image">Image</label>
-    <input class="form-control" type="text" name="ajout_image">
-    <label for="ajout_categorie">Catégorie</label>
-    <select class="form-control custom-select" name="ajout_categorie" id="select_categorie">
-      <option selected="true" disabled="disabled">Choisissez la catégorie de votre article</option>
+    <label>Prix *</label>
+    <input class="form-control" type="number" name="ajout_prix" step="0.01" required>
+    <label for="ajout_categorie">Catégorie *</label>
+    <select class="form-control custom-select" name="ajout_categorie" id="select_categorie" required>
+      <option selected="true" disabled="disabled" value="">-- Choisissez la catégorie de votre article --</option>
       <option>epicerie_salee</option>
       <option>viande</option>
       <option>fruits_et_legumes</option>
@@ -60,6 +59,10 @@
       <option>5.5</option>
       <option>20</option>
     </select>
+    <label>Ajouter une photo *</label>
+    <div class="">
+      <input type="file" name="ajout_fichier" required>
+    </div>
 
     <div class="form-check form-check-inline">
       <input class="form-check-input" type="checkbox" name="ajout_publication" checked>
@@ -69,6 +72,7 @@
       <input class="form-check-input" type="checkbox" name="ajout_avant">
       <label class="form-check-label" for="ajout_avant">Mis en avant</label>
     </div>
+
 
     <button class="btn btn-primary" type="submit" name="button">Ajouter</button>
   </form>
