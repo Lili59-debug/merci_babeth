@@ -1,0 +1,74 @@
+<%- include('header') -%>
+<main class="container pt-3 pb-3 align-items-center">
+  <form action="/ajout" method="post">
+    <h1><a href="/liste">Accéder au catalogue des produits</a></h1>
+    <h1>Ajout de produits</h1>
+    <div class="form-group">
+      <label for="ajout_nom">Nom du produit</label>
+      <input class="form-control" type="text" name="ajout_nom">
+    </div>
+    <label for="ajout_producteur">Nom du producteur</label>
+    <select class="form-control custom-select" name="ajout_producteur">
+      <option selected="true" disabled="disabled">Sélectionnez votre nom dans la liste</option>
+      <option>Farid Agri</option>
+      <option>Sami Botté</option>
+      <option>Jacqueline Conserve</option>
+      <option>Henri Farine</option>
+      <option>Léa Hortensia</option>
+      <option>Michel Jardinier</option>
+      <option>Hélène Présure</option>
+      <option>Julie Récure</option>
+      <option>Jean Sucre</option>
+    </select>
+    <label for="ajout_description">Description</label>
+    <textarea class="form-control" name="ajout_description" rows="6" cols="80"></textarea>
+    <label>Prix</label>
+    <input class="form-control" type="number" name="ajout_prix" step="0.01">
+    <label for="ajout_image">Image</label>
+    <input class="form-control" type="text" name="ajout_image">
+    <label for="ajout_categorie">Catégorie</label>
+    <select class="form-control custom-select" name="ajout_categorie" id="select_categorie">
+      <option selected="true" disabled="disabled">Choisissez la catégorie de votre article</option>
+      <option>epicerie_salee</option>
+      <option>viande</option>
+      <option>fruits_et_legumes</option>
+      <option>cosmetiques</option>
+      <option>entretien_de_la_maison</option>
+      <option>boissons</option>
+      <option>boulangerie</option>
+      <option>produits_laitiers</option>
+      <option>epicerie_sucree</option>
+      <option>fleurs</option>
+    </select>
+    <small class="form-text text-muted">
+      Vous ne trouvez pas votre bonheur ? Choisissez la catégorie la plus proche !
+    </small>
+    <label for="ajout_reference">Référence</label>
+    <input class="form-control" type="text" name="ajout_reference">
+    <label for="ajout_stock">Nombre de produits en stock</label>
+    <input class="form-control" type="number" name="ajout_stock">
+    <label for="ajout_unite">Unité</label>
+    <select class="form-control" name="ajout_unite">
+      <option>pièce</option>
+      <option>kg</option>
+      <option>g</option>
+    </select>
+    <label for="ajout_tva">TVA</label>
+    <select class="form-control custom-select" size="2" name="ajout_tva">
+      <option>5.5</option>
+      <option>20</option>
+    </select>
+
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" name="ajout_publication" checked>
+      <label class="form-check-label" for="ajout_publication">Publié</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" name="ajout_avant">
+      <label class="form-check-label" for="ajout_avant">Mis en avant</label>
+    </div>
+
+    <button class="btn btn-primary" type="submit" name="button">Ajouter</button>
+  </form>
+</main>
+<%- include('footer') -%>

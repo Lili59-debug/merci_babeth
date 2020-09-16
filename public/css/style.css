@@ -87,7 +87,7 @@ abbr {
   box-shadow: 1px 2px 1px 1px rgba(214, 146, 98, 0.2)
 }
 
-input {
+.form_login>input {
     width: 30%;
   }
 
@@ -174,4 +174,15 @@ span {
   max-width: 100px;
   max-height: auto;
   margin: 5px 5px 10px 5px;
+}
+
+input,select,textarea,small {
+  margin-bottom: 10px;
+}
+
+#select_categorie {
+  margin-bottom: 0;
+}
+.form-check {
+  margin-bottom: 10px;
 }
