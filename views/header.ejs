@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Merci Babeth ! Accueil commandes</title>
-  <meta name="description" content="Commandez vos produits sur Merci Babeth !, groupement d'achat de produits du terroir et artisanaux à Rennes.">
+  <meta name="description"
+    content="Commandez vos produits sur Merci Babeth !, groupement d'achat de produits du terroir et artisanaux à Rennes.">
   <meta name="author" content="Aurélie Constant">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -21,7 +22,8 @@
       <a class="navbar-brand" href="/">
         <img src="/img/cropped-logo-texte-8.png" width="120" height="40" alt="">
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -30,7 +32,8 @@
             <a class="nav-link" href="/qui-est-babeth">Qui sommes-nous ?<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
               Nos produits
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -54,13 +57,26 @@
           </li>
 
         </ul>
+
         <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Votre recherche" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
-    </form>
-    <li class="nav-item">
-      <a href="/admin" class="nav-link"><i class="fa fa-cogs"></i></a>
-    </li>
+          <div class="group">
+            <input class="form-control mr-sm-2" type="search" placeholder="Votre recherche" aria-label="Search"
+              onkeyup="showResults(this.value)"></input>
+          </div>
+
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+
+          <div style="position:relative;width:100%;top:-1px">
+            <div class="border" id="search-results">
+
+            </div>
+          </div>
+
+        </form>
+
+        <li class="nav-item">
+          <a href="/admin" class="nav-link"><i class="fa fa-cogs"></i></a>
+        </li>
       </div>
     </nav>
   </header>

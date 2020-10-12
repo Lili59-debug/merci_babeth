@@ -171,9 +171,6 @@ app.post('/ajout', function(req, res) {
   })
 })
 
-
-
-
 //Gérer erreurs 404
 app.use(function(req, res) {
   res.setHeader('Content-Type', 'text/plain');
